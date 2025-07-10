@@ -1,21 +1,17 @@
-@import "tailwindcss";
+
 
 :root {
-  --background: #0a0a0a;     /* Preto profundo */
-  --foreground: #ffd700;     /* Dourado (Gold) */
+  --background: #0a0a0a;     
+  --foreground: #ffd700;     
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;   /* Preto absoluto */
-    --foreground: #ffcc00;   /* Dourado mais intenso */
+    --background: #000000;   
+    --foreground: #ffcc00;   
   }
 }
 

@@ -4,7 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0a0a0a; /* fundo preto */
+  background-color: #0a0a0a; 
+  font-family: 'Merriweather', serif; 
+  color: #ffd700;
 }
 
 .main {
@@ -13,64 +15,80 @@
 }
 
 .title {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #ffd700; /* dourado */
+  font-size: 2.5rem; 
+  text-align: left; 
+  margin-bottom: 1.5rem;
+  color: #ffd700;
+  font-weight: 700; 
+  letter-spacing: 0.05em; 
+  text-transform: uppercase; 
 }
 
 .description {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-  color: #ffcc00; /* dourado mais suave */
+  text-align: justify; 
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #ffcc00;
+  font-style: italic; 
+  line-height: 1.5; 
 }
 
 .card {
   position: relative;
-  background-color: #121212; /* preto mais claro */
-  border: 1px solid #444; /* cinza escuro para contorno */
-  padding: 1.5rem;
-  margin-bottom: 1rem;
+  background-color: #121212;
+  border: 1px solid #444; 
+  padding: 2rem;
+  margin-bottom: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.1); /* sombra dourada sutil */
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.15); 
   transition: transform 0.2s ease;
+  text-align: center;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
 }
 
 .card h3 {
-  position: absolute;
-  top: 0.75rem;
-  left: 1rem;
-  font-size: 0.85rem;
+  position: relative; 
+  top: 0;
+  left: 0;
+  font-size: 1rem;
   color: #ffcc00;
-  margin: 0;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  text-transform: capitalize; 
 }
 
 .card p {
   margin: 0.25rem 0;
   color: #ffd700;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
 }
 
 .footer {
   text-align: center;
   margin-top: 2rem;
-  color: #aaa; /* tom neutro claro */
+  color: #aaa;
   font-size: 0.9rem;
+  font-family: 'Arial', sans-serif; 
 }
 
 .dateInput {
-  padding: 0.4rem;
-  font-size: 1rem;
+  padding: 0.6rem;
+  font-size: 1.1rem;
   border: 1px solid #ffd700;
-  border-radius: 4px;
-  margin-top: 0.5rem;
+  border-radius: 6px;
+  margin-top: 0.75rem;
   background-color: #000;
   color: #ffd700;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -79,28 +97,30 @@
   }
 
   .card {
-    padding: 1rem;
+    padding: 1.25rem;
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-align: center; 
   }
 
   .description {
-    font-size: 0.95rem;
+    font-size: 1rem;
     padding: 0 0.5rem;
+    text-align: center; 
   }
 
   .card h3 {
-    font-size: 0.75rem;
-  }
-
-  .card p {
     font-size: 0.9rem;
   }
 
+  .card p {
+    font-size: 0.95rem;
+  }
+
   .dateInput {
-    width: 100%;
     margin-bottom: 1rem;
+    max-width: 100%;
   }
 }
