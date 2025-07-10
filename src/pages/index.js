@@ -10,7 +10,7 @@ export default function Home() {
   const [endDate, setEndDate] = useState('');
 
   const { data, error, isLoading } = useSWR(
-    'https://economia.awesomeapi.com.br/json/daily/USD-BRL/30',
+    'https://economia.awesomeapi.com.br/json/daily/BTC-BRL/30',
     fetcher,
     { refreshInterval: 10000 }
   );
@@ -31,14 +31,13 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Minha Página com Next.js</title>
-        <meta name="description" content="Exemplo com cotação filtrada por data" />
+        <meta name="description" content="Exemplo com cotação de Bitcoin filtrada por data" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Cotação USD/BRL</h1>
+        <h1 className={styles.title}>Cotação BTC/BRL</h1>
 
-       
         <div className={styles.description}>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center' }}>
             <label>
@@ -69,12 +68,12 @@ export default function Home() {
             ))}
           </div>
         ) : (
-          <p className={styles.description}>Selecione um período válido para ver as cotações.</p>
+          <p className={styles.description}>Selecione uma época existente.</p>
         )}
       </main>
 
       <footer className={styles.footer}>
-        <p>Feito em Next.js :D</p>
+        
       </footer>
     </div>
   );

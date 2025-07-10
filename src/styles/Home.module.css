@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: #0a0a0a; /* fundo preto */
 }
 
 .main {
@@ -16,24 +16,24 @@
   font-size: 2rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #333;
+  color: #ffd700; /* dourado */
 }
 
 .description {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 1rem;
-  color: #666;
+  color: #ffcc00; /* dourado mais suave */
 }
 
 .card {
   position: relative;
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: #121212; /* preto mais claro */
+  border: 1px solid #444; /* cinza escuro para contorno */
   padding: 1.5rem;
   margin-bottom: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.1); /* sombra dourada sutil */
   transition: transform 0.2s ease;
 }
 
@@ -46,29 +46,31 @@
   top: 0.75rem;
   left: 1rem;
   font-size: 0.85rem;
-  color: #888;
+  color: #ffcc00;
   margin: 0;
 }
 
 .card p {
   margin: 0.25rem 0;
-  color: #333;
+  color: #ffd700;
   font-size: 0.95rem;
 }
 
 .footer {
   text-align: center;
   margin-top: 2rem;
-  color: #999;
+  color: #aaa; /* tom neutro claro */
   font-size: 0.9rem;
 }
 
 .dateInput {
   padding: 0.4rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #ffd700;
   border-radius: 4px;
   margin-top: 0.5rem;
+  background-color: #000;
+  color: #ffd700;
 }
 
 @media (max-width: 600px) {
@@ -97,10 +99,8 @@
     font-size: 0.9rem;
   }
 
-  @media (max-width: 600px) {
   .dateInput {
     width: 100%;
     margin-bottom: 1rem;
   }
-}
 }
